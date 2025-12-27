@@ -1,0 +1,16 @@
+pandas==2.3.1   # Data reading, cleaning and analysis (supports formats like Excel/CSV)
+numpy==1.23.5 # Numerical computation and array operations (core dependency of the code)
+openpyxl==3.1.5 # Supports pandas to read/write Excel .xlsx format (required dependency)
+
+
+matplotlib==3.9.4 # Basic plotting library (generates various SHAP visualization charts)
+seaborn==0.13.2 # Plot beautification (enhances matplotlib visualization effects)
+pillow==11.3.0 # Image processing (supports matplotlib image saving and format conversion)
+
+
+scikit-learn==1.2.2 # Machine learning toolkit (RF model training, data splitting, standardization, evaluation metrics)
+shap==0.48.0 # Model interpretability analysis (core library, generates various SHAP explanation plots)
+xgboost==2.0.3 # Gradient boosting tree model (included in user environment, optional to retain)
+scipy==1.13.1 # Scientific computing (dependency of sklearn/shap, provides numerical optimization functions)
+joblib==1.5.1 # Model serialization and parallel computing (dependency for sklearn model saving/loading)
+threadpoolctl==3.6.0 # Thread pool control (dependency for sklearn parallel computing)

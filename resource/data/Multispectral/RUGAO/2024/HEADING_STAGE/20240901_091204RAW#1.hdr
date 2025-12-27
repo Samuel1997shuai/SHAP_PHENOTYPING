@@ -1,0 +1,11 @@
+ENVI
+samples = 2040
+lines = 2040
+bands = 2
+data type = 12
+header offset = 0
+file type = ENVI Standard
+interleave = bsq
+sensor type = CPDemo_8Channels
+file type = ENVI Standard
+wavelength = {0,1}

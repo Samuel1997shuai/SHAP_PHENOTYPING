@@ -1,0 +1,11 @@
+ENVI
+samples = 1020
+lines = 1020
+bands = 25
+data type = 4
+header offset = 0
+file type = ENVI Standard
+interleave = bsq
+sensor type = CPDemo_8Channels
+file type = ENVI Standard
+band names = {NDVI,SAVI,NDVI705,RVI,EVI,ARVI,mNDVI705,PSRI,PRI,SIPI,SG,SS,Tubidity,TSS,TP,WD_Macrophytes,WD_Stone,WD_Sand,SC,COD,BOD5,DO,CHLa,NH3-N,NN}
