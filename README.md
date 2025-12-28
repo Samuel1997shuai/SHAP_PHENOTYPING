@@ -160,7 +160,7 @@ Constructed via dictionary unpacking to map each individual feature to its corre
 ##### Consolidated Total Feature List (`all_features`)
 Merges all 5 feature lists in a fixed category order (Vegetation Index → Coverage Index → Color Index → Texture Feature → Meteorological Factor) to form a unified feature collection for batch processing. Eliminates the need for redundant feature list definitions across different scripts.
 
-### 2. `data_processing/correlation_analysis/correlations_analyze.py` 
+### 2. [data_processing/correlation_analysis/correlations_analyze.py](./data_processing/correlation_analysis/correlations_analyze.py)
 ### <font color=green>Generate Fig. 4 and Fig. 5 in our paper</font>
 #### File Overview
 This script serves as the core tool for conducting comprehensive correlation analysis between phenotypic/environmental features and the target variable (LAI). It outputs a variety of statistical tables and standardized visualizations for each growth stage and the overall dataset.
@@ -214,7 +214,7 @@ All visualization functions generate both high-resolution images (300 DPI) and c
   1. Statistical tables (Excel format): Correlation matrices, regression parameters, feature significance statistics, etc.
   2. Visualizations (PNG format): Heatmaps, bar plots, scatter matrices, regression plots, etc., with high resolution (300 DPI).
 
-### 3. `data_processing/correlation_analysis/coverage.py` - Canopy Coverage Calculation & Image Segmentation Script
+### 3. [data_processing/correlation_analysis/coverage.py](./data_processing/correlation_analysis/coverage.py) - Canopy Coverage Calculation & Image Segmentation Script
 #### File Overview
 This script is dedicated to calculating vegetation canopy coverage from RGB images and performing vegetation-soil background segmentation. It batch processes images from 60 target folders, uses the `2g-r-b` (2×Green - Red - Blue) vegetation extraction algorithm to separate vegetation from background, saves segmented images, and outputs canopy coverage statistics for each image in a CSV file.
 
@@ -264,7 +264,7 @@ For each of the three target images in the folder, the script executes the follo
    - Rows: One row per folder (60 rows total), with `None` values for missing images
    - Format: Comma-separated values, compatible with Excel and other data analysis tools
 
-### 4. `algorithms/rf_phenotyping.py` (Other Algorithms: PLS/SVR/XGBoost Follow the Same Framework) - Random Forest (RF) Regression Complete Toolkit
+### 4. [algorithms/rf_phenotyping.py](./algorithms) (Other Algorithms: PLS/SVR/XGBoost Follow the Same Framework)
 ### <font color=green>Generate Table 5 and Fig. 6 and Fig. 7 and Fig. 9 in our paper</font>
 #### File Overview
 This script implements a comprehensive analytical toolkit encompassing Random Forest Regression, PLS, XGBoost, and SVR, which is specifically tailored for vegetation phenotyping analysis. To illustrate its practical application, we take Random Forest (RF) as an illustrative example. This toolkit features full functional consistency across all versions and adopts a unified rf_ prefix for all output files and directories. Additionally, it executes a complete end-to-end workflow that includes parameter grid search, 3D performance visualization, generation of statistical tables for R² and RMSE metrics, Origin-style fitting plots, independent analysis of single feature groups, and preservation of true and predicted values.
@@ -370,7 +370,7 @@ This script implements a comprehensive analytical toolkit encompassing Random Fo
    - **Enhanced Usability**: Adds single feature group independent analysis and true/predicted value saving, improving the usability of result analysis.
    - **High Usability**: All results are saved in standard formats (CSV/Excel/PNG) suitable for further statistical analysis.
 
-### 5. `shap_evaluation/analysis_rf/shap_rf_phenotyping.py` - Random Forest (RF) SHAP Explainability Analysis Tool
+### 5. [shap_evaluation/analysis_rf/shap_rf_phenotyping.py](./shap_evaluation/analysis_rf/shap_rf_phenotyping.py) - Random Forest (RF) SHAP Explainability Analysis Tool
 ### <font color=green>Generate Fig. 8 in our paper</font>
 #### File Overview
 This script implements a simplified and standardized SHAP (SHapley Additive Explanations) explainability analysis pipeline for the Random Forest regression model, focusing exclusively on the `Four_Features_Plus_Coverage` feature group (vegetation + color + texture + meteorological + coverage features). It generates standardized visualizations and structured data files, with all analyses centered on the top 20 most important features (sorted by mean absolute SHAP values). The pipeline supports only tree-based RF models, outputs static visualizations (avoiding dynamic HTML), and retains complete tabular data for secondary analysis.
