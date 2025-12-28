@@ -272,11 +272,11 @@ This script implements a comprehensive analytical toolkit encompassing Random Fo
 #### Core Modules & Implementation Details
 1. **Dependency Import & Environment Configuration**
    - **Basic Dependencies**: Imports libraries for data processing (`pandas`, `numpy`), visualization (`matplotlib`, `mpl_toolkits.mplot3d`), model evaluation (`sklearn`), and system operations (`os`, `sys`, `warnings`, `itertools`), with additional `DummyRegressor` for baseline model construction.
-   - **Feature Definition Import**: Adds the project root directory to the system path to import feature lists from `config.feature_definitions`, ensuring consistency with the PLS version.
+   - **Feature Definition Import**: Adds the project root directory to the system path to import feature lists from `config.feature_definitions`.
    - **Environment Initialization**: Disables warning prompts, sets Chinese font (`SimHei`) for visualization, fixes negative sign display issues, and prints environment status for verification.
 
 2. **Experiment Parameter Configuration (`ExperimentConfig` Class)**
-   A unified configuration class with full alignment with the PLS version, using `rf_` prefix for output-related settings:
+   Using `rf_` prefix for output-related settings:
    - **Data Related**: Dataset path (`DATA_PATH`), target variable (`TARGET_COL = 'LAI'`), and missing value handling method (`MISSING_VALUE_HANDLER`).
    - **Dataset Splitting**: Random seed (`RANDOM_STATE`), test set ratio (`TEST_SIZE`), and minimum test sample count (`MIN_TEST_SAMPLES`).
    - **Output Configuration**: Root directory for results (`OUTPUT_ROOT = './rf_3d_surfaces_with_tables'`), image resolution (`FIG_DPI = 300`), figure size, and colormap for 3D surface plots (`SURFACE_CMAP = 'jet'`).
@@ -321,7 +321,7 @@ This script implements a comprehensive analytical toolkit encompassing Random Fo
    - `plot_rf_3d_surface_match_example()`: Generates a 3D performance surface plot matching the example style ("n_estimators vs mtry → RMSE"), uses cubic interpolation to generate smooth grid data, sets the viewing angle (`elev=30, azim=135`) to match the example, adds a color bar for RMSE, and saves the plot with a `rf_` prefix.
 
 8. **Main Function (`main()`)**
-   The core workflow function, fully consistent with the PLS process, executing the following steps in sequence:
+   The core workflow function, executing the following steps in sequence:
    1. **Data Preprocessing**: Loads and cleans the dataset, adaptively configures RF parameters.
    2. **Standardization**: Scales the feature matrix using `StandardScaler`.
    3. **Baseline Model Training**: Trains a mean prediction model and calculates baseline RMSE.
