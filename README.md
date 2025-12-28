@@ -142,7 +142,7 @@ Follow the step-by-step instructions below to set up the project environment cor
 
 ## Core Component Details
 
-### 1. `[config/feature_definitions.py](./config/feature_definitions.py)` - Feature Central Management Module
+### 1. [config/feature_definitions.py](./config/feature_definitions.py) - Feature Central Management Module
 #### File Overview
 This file serves as a centralized management hub for all phenotypic and environmental features, enabling cross-script reuse of feature lists, feature type mappings, and consolidated feature collections. It uses UTF-8 encoding and includes detailed docstrings to clarify its functional role.
 
