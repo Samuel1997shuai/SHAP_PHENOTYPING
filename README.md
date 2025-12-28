@@ -267,7 +267,7 @@ For each of the three target images in the folder, the script executes the follo
 ### 4. `algorithms/rf_phenotyping.py` (Other Algorithms: PLS/SVR/XGBoost Follow the Same Framework) - Random Forest (RF) Regression Complete Toolkit
 ### <font color=green>Generate Table 5 and Fig. 6 and Fig. 7 and Fig. 9 in our paper</font>
 #### File Overview
-This script implements a comprehensive Random Forest regression toolkit for vegetation phenotyping analysis, with full functional consistency with the PLS version and unified `rf_` prefix for all output files/directories. It completes a full workflow including parameter grid search, 3D performance visualization, R²/RMSE statistical table generation, Origin-style fitting plotting, single feature group independent analysis, and true/predicted value saving.
+This script implements a comprehensive analytical toolkit encompassing Random Forest Regression, PLS, XGBoost, and SVR, which is specifically tailored for vegetation phenotyping analysis. To illustrate its practical application, we take Random Forest (RF) as an illustrative example. This toolkit features full functional consistency across all versions and adopts a unified rf_ prefix for all output files and directories. Additionally, it executes a complete end-to-end workflow that includes parameter grid search, 3D performance visualization, generation of statistical tables for R² and RMSE metrics, Origin-style fitting plots, independent analysis of single feature groups, and preservation of true and predicted values.
 
 #### Core Modules & Implementation Details
 1. **Dependency Import & Environment Configuration**
