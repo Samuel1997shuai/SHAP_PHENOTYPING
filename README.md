@@ -8,7 +8,7 @@ This project focuses on phenotyping analysis by fusing **multi-source data** for
 All features utilized in this project are derived from 3 core data types, with detailed imagery visualizations and functional explanations provided as follows:
 
 ### 1. Multi Spectral Imagery 
-This imagery captures object reflections across multiple spectral bands (474,566,679,717,822nm), making it indispensable for quantifying vegetation growth status and physiological traits.
+This imagery captures the reflection characteristics of objects across multiple spectral bands (474 nm, 566 nm, 679 nm, 717 nm, 822 nm), rendering it indispensable for quantifying vegetation growth status and physiological traits.Example datasets are available in the directory[./resource/data/RUGAO/2024].
 
 <div align=center><img src="resource/multi.png"></div>
 <div align=center>Figure 1: Multi Spectral Imagery</div>
