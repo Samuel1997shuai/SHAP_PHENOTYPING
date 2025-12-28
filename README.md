@@ -113,7 +113,7 @@ SHAP_PHENOTYPING/
 ## Installation
 Follow the step-by-step instructions below to set up the project environment correctly:
 
-1. Clone this repository to your local machine using Git (replace `<repository-url>` with the actual URL of this repository):
+1. Clone this repository to your local machine using Git :
    ```bash
    git clone https://github.com/Samuel1997shuai/SHAP_PHENOTYPING.git
    ```
