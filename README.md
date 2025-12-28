@@ -109,6 +109,8 @@ SHAP_PHENOTYPING/
 │   ├── analysis_rf/          # SHAP analysis for Random Forest
 │   │   └── shap_rf_phenotyping.py  # SHAP evaluation script for RF
 └── README.md                 # Project documentation (this file)
+│   │   
+└── requirements.txt               
 ```
 ## Installation
 Follow the step-by-step instructions below to set up the project environment correctly:
