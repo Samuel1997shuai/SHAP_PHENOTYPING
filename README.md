@@ -1,4 +1,4 @@
-# SHAP PHENOTYPING
+<h1 align=center>SHAP PHENOTYPING</h1>
 A framework for phenotyping analysis leveraging SHAP (SHapley Additive Explanations) to interpret model outputs, integrated with multi-source data (imagery + meteorological records).
 
 ## Introduction
